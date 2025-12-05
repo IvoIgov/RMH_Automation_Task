@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Automation\\AmazonAutomation\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D634B2F7-E6B6-4747-A8A1-2BA2E4E0EC10}|AmazonAutomation\\AmazonAutomation.csproj|d:\\automation\\amazonautomation\\amazonautomation\\pages\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D634B2F7-E6B6-4747-A8A1-2BA2E4E0EC10}|AmazonAutomation\\AmazonAutomation.csproj|solutionrelative:amazonautomation\\pages\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D634B2F7-E6B6-4747-A8A1-2BA2E4E0EC10}|AmazonAutomation\\AmazonAutomation.csproj|d:\\automation\\amazonautomation\\amazonautomation\\pages\\basepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D634B2F7-E6B6-4747-A8A1-2BA2E4E0EC10}|AmazonAutomation\\AmazonAutomation.csproj|solutionrelative:amazonautomation\\pages\\basepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D634B2F7-E6B6-4747-A8A1-2BA2E4E0EC10}|AmazonAutomation\\AmazonAutomation.csproj|d:\\automation\\amazonautomation\\amazonautomation\\tests\\addproducttocart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D634B2F7-E6B6-4747-A8A1-2BA2E4E0EC10}|AmazonAutomation\\AmazonAutomation.csproj|solutionrelative:amazonautomation\\tests\\addproducttocart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D634B2F7-E6B6-4747-A8A1-2BA2E4E0EC10}|AmazonAutomation\\AmazonAutomation.csproj|D:\\Automation\\AmazonAutomation\\amazonautomation\\pages\\searchresultspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D634B2F7-E6B6-4747-A8A1-2BA2E4E0EC10}|AmazonAutomation\\AmazonAutomation.csproj|solutionrelative:amazonautomation\\pages\\searchresultspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D634B2F7-E6B6-4747-A8A1-2BA2E4E0EC10}|AmazonAutomation\\AmazonAutomation.csproj|D:\\Automation\\AmazonAutomation\\amazonautomation\\pages\\cartpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D634B2F7-E6B6-4747-A8A1-2BA2E4E0EC10}|AmazonAutomation\\AmazonAutomation.csproj|solutionrelative:amazonautomation\\pages\\cartpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D634B2F7-E6B6-4747-A8A1-2BA2E4E0EC10}|AmazonAutomation\\AmazonAutomation.csproj|D:\\Automation\\AmazonAutomation\\amazonautomation\\pages\\productpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D634B2F7-E6B6-4747-A8A1-2BA2E4E0EC10}|AmazonAutomation\\AmazonAutomation.csproj|solutionrelative:amazonautomation\\pages\\productpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D634B2F7-E6B6-4747-A8A1-2BA2E4E0EC10}|AmazonAutomation\\AmazonAutomation.csproj|D:\\Automation\\AmazonAutomation\\amazonautomation\\config\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D634B2F7-E6B6-4747-A8A1-2BA2E4E0EC10}|AmazonAutomation\\AmazonAutomation.csproj|solutionrelative:amazonautomation\\config\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D634B2F7-E6B6-4747-A8A1-2BA2E4E0EC10}|AmazonAutomation\\AmazonAutomation.csproj|D:\\Automation\\AmazonAutomation\\amazonautomation\\tests\\testbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D634B2F7-E6B6-4747-A8A1-2BA2E4E0EC10}|AmazonAutomation\\AmazonAutomation.csproj|solutionrelative:amazonautomation\\tests\\testbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D634B2F7-E6B6-4747-A8A1-2BA2E4E0EC10}|AmazonAutomation\\AmazonAutomation.csproj|D:\\Automation\\AmazonAutomation\\amazonautomation\\allureconfig.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{D634B2F7-E6B6-4747-A8A1-2BA2E4E0EC10}|AmazonAutomation\\AmazonAutomation.csproj|solutionrelative:amazonautomation\\allureconfig.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomePage.cs",
+              "DocumentMoniker": "D:\\Automation\\AmazonAutomation\\AmazonAutomation\\Pages\\HomePage.cs",
+              "RelativeDocumentMoniker": "AmazonAutomation\\Pages\\HomePage.cs",
+              "ToolTip": "D:\\Automation\\AmazonAutomation\\AmazonAutomation\\Pages\\HomePage.cs",
+              "RelativeToolTip": "AmazonAutomation\\Pages\\HomePage.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T21:05:15.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BasePage.cs",
+              "DocumentMoniker": "D:\\Automation\\AmazonAutomation\\AmazonAutomation\\Pages\\BasePage.cs",
+              "RelativeDocumentMoniker": "AmazonAutomation\\Pages\\BasePage.cs",
+              "ToolTip": "D:\\Automation\\AmazonAutomation\\AmazonAutomation\\Pages\\BasePage.cs",
+              "RelativeToolTip": "AmazonAutomation\\Pages\\BasePage.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA5wDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T21:04:55.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "allureConfig.json",
+              "DocumentMoniker": "D:\\Automation\\AmazonAutomation\\AmazonAutomation\\allureConfig.json",
+              "RelativeDocumentMoniker": "AmazonAutomation\\allureConfig.json",
+              "ToolTip": "D:\\Automation\\AmazonAutomation\\AmazonAutomation\\allureConfig.json",
+              "RelativeToolTip": "AmazonAutomation\\allureConfig.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-04T11:34:06.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TestBase.cs",
+              "DocumentMoniker": "D:\\Automation\\AmazonAutomation\\AmazonAutomation\\Tests\\TestBase.cs",
+              "RelativeDocumentMoniker": "AmazonAutomation\\Tests\\TestBase.cs",
+              "ToolTip": "D:\\Automation\\AmazonAutomation\\AmazonAutomation\\Tests\\TestBase.cs",
+              "RelativeToolTip": "AmazonAutomation\\Tests\\TestBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T11:03:43.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Constants.cs",
+              "DocumentMoniker": "D:\\Automation\\AmazonAutomation\\AmazonAutomation\\Config\\Constants.cs",
+              "RelativeDocumentMoniker": "AmazonAutomation\\Config\\Constants.cs",
+              "ToolTip": "D:\\Automation\\AmazonAutomation\\AmazonAutomation\\Config\\Constants.cs",
+              "RelativeToolTip": "AmazonAutomation\\Config\\Constants.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T13:13:25.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductPage.cs",
+              "DocumentMoniker": "D:\\Automation\\AmazonAutomation\\AmazonAutomation\\Pages\\ProductPage.cs",
+              "RelativeDocumentMoniker": "AmazonAutomation\\Pages\\ProductPage.cs",
+              "ToolTip": "D:\\Automation\\AmazonAutomation\\AmazonAutomation\\Pages\\ProductPage.cs",
+              "RelativeToolTip": "AmazonAutomation\\Pages\\ProductPage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T13:02:59.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CartPage.cs",
+              "DocumentMoniker": "D:\\Automation\\AmazonAutomation\\AmazonAutomation\\Pages\\CartPage.cs",
+              "RelativeDocumentMoniker": "AmazonAutomation\\Pages\\CartPage.cs",
+              "ToolTip": "D:\\Automation\\AmazonAutomation\\AmazonAutomation\\Pages\\CartPage.cs",
+              "RelativeToolTip": "AmazonAutomation\\Pages\\CartPage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T13:02:28.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SearchResultsPage.cs",
+              "DocumentMoniker": "D:\\Automation\\AmazonAutomation\\AmazonAutomation\\Pages\\SearchResultsPage.cs",
+              "RelativeDocumentMoniker": "AmazonAutomation\\Pages\\SearchResultsPage.cs",
+              "ToolTip": "D:\\Automation\\AmazonAutomation\\AmazonAutomation\\Pages\\SearchResultsPage.cs",
+              "RelativeToolTip": "AmazonAutomation\\Pages\\SearchResultsPage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T12:18:42.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddProductToCart.cs",
+              "DocumentMoniker": "D:\\Automation\\AmazonAutomation\\AmazonAutomation\\Tests\\AddProductToCart.cs",
+              "RelativeDocumentMoniker": "AmazonAutomation\\Tests\\AddProductToCart.cs",
+              "ToolTip": "D:\\Automation\\AmazonAutomation\\AmazonAutomation\\Tests\\AddProductToCart.cs",
+              "RelativeToolTip": "AmazonAutomation\\Tests\\AddProductToCart.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T12:14:21.941Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

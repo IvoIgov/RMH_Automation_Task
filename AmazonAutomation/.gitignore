@@ -1,0 +1,40 @@
+﻿# Visual Studio / .NET
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+bin/
+obj/
+Debug/
+Release/
+x64/
+x86/
+
+# Rider IDE
+.idea/
+
+# ReSharper
+_ReSharper*/
+
+# NUnit / Test results
+TestResults/
+*.TestResults.xml
+*.trx
+
+# Visual Studio Code
+.vscode/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+
+# Allure results (optional if you don't want to commit them)
+allure-results/
+Screenshots/

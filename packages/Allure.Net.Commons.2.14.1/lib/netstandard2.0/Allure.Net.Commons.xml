@@ -1,0 +1,1696 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Allure.Net.Commons</name>
+    </assembly>
+    <members>
+        <member name="T:Allure.Net.Commons.AllureApi">
+            <summary>
+            A facade that provides the API for test authors to enhance the Allure
+            report.
+            </summary>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.SetTestName(System.String)">
+            <summary>
+            Sets the name of the current test.
+            </summary>
+            <remarks>If no test is running, does nothing.</remarks>
+            <param name="newName">The new name of the test.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.SetFixtureName(System.String)">
+            <summary>
+            Sets the name of the current fixture.
+            </summary>
+            <remarks>If no fixture is running, does nothing.</remarks>
+            <param name="newName">The new name of the fixture.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.SetStepName(System.String)">
+            <summary>
+            Sets the name of the current step.
+            </summary>
+            <remarks>If no step is running, does nothing.</remarks>
+            <param name="newName">The new name of the step.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.SetDescription(System.String)">
+            <summary>
+            Sets the description of the current test.
+            </summary>
+            <remarks>If no test is running, does nothing.</remarks>
+            <param name="description">The description of the test.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.SetDescriptionHtml(System.String)">
+            <summary>
+            Sets the description of the current test. Allows HTML to be used.
+            </summary>
+            <remarks>If no test is running, does nothing.</remarks>
+            <param name="descriptionHtml">
+            The description in the HTML format.
+            </param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.AddLabels(Allure.Net.Commons.Label[])">
+            <summary>
+            Adds new labels to the test's list of labels.
+            </summary>
+            <remarks>If no test is running, does nothing.</remarks>
+            <param name="labels">The labels to add.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.AddLabel(System.String,System.String)">
+            <summary>
+            Adds a new label to the current test result.
+            </summary>
+            <remarks>If no test is running, does nothing.</remarks>
+            <param name="name">The name of the label to add.</param>
+            <param name="value">The value of the label to add.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.AddLabel(Allure.Net.Commons.Label)">
+            <summary>
+            Adds a label to the current test result.
+            </summary>
+            <remarks>If no test is running, does nothing.</remarks>
+            <param name="label">The new label of the test.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.SetSeverity(Allure.Net.Commons.SeverityLevel)">
+            <summary>
+            Sets the current test's severity.
+            </summary>
+            <remarks>If no test is running, does nothing.</remarks>
+            <param name="severity">The new severity level of the test.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.SetOwner(System.String)">
+            <summary>
+            Sets the current test's owner.
+            </summary>
+            <remarks>If no test is running, does nothing.</remarks>
+            <param name="owner">The new owner of the test.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.SetAllureId(System.Int32)">
+            <summary>
+            Sets the current test's ID.
+            </summary>
+            <remarks>If no test is running, does nothing.</remarks>
+            <param name="allureId">The new ID of the test case.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.AddTags(System.String[])">
+            <summary>
+            Adds tags to the current test.
+            </summary>
+            <remarks>If no test is running, does nothing.</remarks>
+            <param name="tags">The new tags.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.AddParentSuite(System.String)">
+            <summary>
+            Adds an additional parent suite to the current test.
+            </summary>
+            <remarks>If no test is running, does nothing.</remarks>
+            <param name="parentSuite">The parent suite to be added.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.AddSuite(System.String)">
+            <summary>
+            Adds an additional suite to the current test.
+            </summary>
+            <remarks>If no test is running, does nothing.</remarks>
+            <param name="suite">The suite to be added.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.AddSubSuite(System.String)">
+            <summary>
+            Adds an additional sub-suite to the current test.
+            </summary>
+            <remarks>If no test is running, does nothing.</remarks>
+            <param name="subSuite">The sub-suite to be added.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.AddEpic(System.String)">
+            <summary>
+            Adds an additional epic to the current test.
+            </summary>
+            <remarks>If no test is running, does nothing.</remarks>
+            <param name="epic">The epic to be added.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.AddFeature(System.String)">
+            <summary>
+            Adds an additional feature to the current test.
+            </summary>
+            <remarks>If no test is running, does nothing.</remarks>
+            <param name="feature">The feature to be added.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.AddStory(System.String)">
+            <summary>
+            Adds an additional story to the current test.
+            </summary>
+            <remarks>If no test is running, does nothing.</remarks>
+            <param name="story">The story to be added.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.AddLink(System.String)">
+            <summary>
+            Adds a new link to the current test.
+            </summary>
+            <remarks>If no test is running, does nothing.</remarks>
+            <param name="url">The address of the link.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.AddLink(System.String,System.String)">
+            <summary>
+            Adds a new link to the current test.
+            </summary>
+            <remarks>If no test is running, does nothing.</remarks>
+            <param name="name">The display text of the link.</param>
+            <param name="url">The address of the link.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.AddLink(System.String,System.String,System.String)">
+            <summary>
+            Adds a new link to the current test.
+            </summary>
+            <remarks>If no test is running, does nothing.</remarks>
+            <param name="name">The display text of the link.</param>
+            <param name="type">
+            The type of the link. Used when matching link patterns. Might also
+            affect how the link is rendered in the report.
+            </param>
+            <param name="url">The address of the link.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.AddLinks(Allure.Net.Commons.Link[])">
+            <summary>
+            Adds new links to the current test.
+            </summary>
+            <remarks>If no test is running, does nothing.</remarks>
+            <param name="links">The link instances to add.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.AddIssue(System.String)">
+            <summary>
+            Adds a new issue link to the current test.
+            </summary>
+            <remarks>If no test is running, does nothing.</remarks>
+            <param name="url">The URL of the issue.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.AddIssue(System.String,System.String)">
+            <summary>
+            Adds a new issue link to the current test.
+            </summary>
+            <remarks>If no test is running, does nothing.</remarks>
+            <param name="name">The display text of the issue link.</param>
+            <param name="url">The URL of the issue.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.AddTmsItem(System.String)">
+            <summary>
+            Adds a new TMS item link to the current test.
+            </summary>
+            <remarks>If no test is running, does nothing.</remarks>
+            <param name="url">The URL of the TMS item.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.AddTmsItem(System.String,System.String)">
+            <summary>
+            Adds a new TMS item link to the current test.
+            </summary>
+            <remarks>If no test is running, does nothing.</remarks>
+            <param name="name">The display text of the TMS item link.</param>
+            <param name="url">The URL of the TMS item.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.Step(System.String)">
+            <summary>
+            Adds an empty step to the current fixture, test or step.
+            </summary>
+            <remarks>If no test or fixture is running, does nothing.</remarks>
+            <param name="name">The name of the step.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.Step(System.String,System.Action)">
+            <summary>
+            Executes the action and reports the result as a new step of the current
+            fixture, test or step.
+            </summary>
+            <remarks>
+            If no test or fixture is running, just calls the action.
+            </remarks>
+            <param name="name">The name of the step.</param>
+            <param name="action">The code to run.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.Step``1(System.String,System.Func{``0})">
+            <summary>
+            Executes the function and reports the result as a new step of the
+            current fixture, test or step.
+            </summary>
+            <remarks>
+            If no test or fixture is running, just calls the function and returns
+            its result.
+            </remarks>
+            <param name="name">The name of the step.</param>
+            <param name="function">The function to run.</param>
+            <returns>The original value returned by the function.</returns>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.Step(System.String,System.Func{System.Threading.Tasks.Task})">
+            <summary>
+            Executes the asynchronous action and reports the result as a new step
+            of the current fixture, test or step.
+            </summary>
+            <remarks>
+            If no test or fixture is running, just awaits the action.
+            </remarks>
+            <param name="name">The name of the step.</param>
+            <param name="action">The asynchronous code to run.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.Step``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})">
+            <summary>
+            Executes the asynchronous function and reports the result as a new step
+            of the current fixture, test or step.
+            </summary>
+            <remarks>
+            If no test or fixture is running, just awaits the function and returns
+            its result.
+            </remarks>
+            <param name="name">The name of the step.</param>
+            <param name="function">The asynchronous function to run.</param>
+            <returns>The original value returned by the function.</returns>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.AddAttachment(System.String,System.String,System.String)">
+            <summary>
+            Adds an attachment to the current fixture, test or step.
+            </summary>
+            <remarks>If no test or fixture is running, does nothing.</remarks>
+            <param name="name">The name of the attachment.</param>
+            <param name="type">The MIME type of the attachment.</param>
+            <param name="path">The path to the attached file.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.AddAttachment(System.String,System.String,System.Byte[],System.String)">
+            <summary>
+            Adds an attachment to the current fixture, test or step.
+            </summary>
+            <remarks>If no test or fixture is running, does nothing.</remarks>
+            <param name="name">The name of the attachment.</param>
+            <param name="type">The MIME type of the attachment.</param>
+            <param name="content">The content of the attachment.</param>
+            <param name="fileExtension">
+            The extension of the file that will be available for downloading.
+            </param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.AddAttachment(System.String,System.String)">
+            <summary>
+            Adds an attachment to the current fixture, test or step.
+            </summary>
+            <remarks>If no test or fixture is running, does nothing.</remarks>
+            <param name="path">The path to the attached file.</param>
+            <param name="name">
+            The name of the attachment. If null, the file name is used.
+            </param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.AddScreenDiff(System.String,System.String,System.String)">
+            <summary>
+            Attaches screen diff images to the current fixture, test, or step.
+            </summary>
+            <remarks>If no test or fixture is running, does nothing.</remarks>
+            <param name="expectedPngPath">A path to the actual screen.</param>
+            <param name="actualPngPath">A path to the expected screen.</param>
+            <param name="diffPngPath">A path to the screen diff.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.AddScreenDiff(System.Byte[],System.Byte[],System.Byte[])">
+            <summary>
+            Attaches screen diff images to the current fixture, test, or step.
+            </summary>
+            <remarks>If no test or fixture is running, does nothing.</remarks>
+            <param name="expectedPng">An actual screen bytes.</param>
+            <param name="actualPng">An expected screen bytes.</param>
+            <param name="diffPng">A screen diff bytes.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.AddTestParameter(System.String,System.Object)">
+            <summary>
+            Adds a new parameter to the current test.
+            </summary>
+            <remarks>If no test is running, does nothing.</remarks>
+            <param name="name">The name of the new parameter.</param>
+            <param name="value">
+            The value of the new parameter. The value is converted to a string
+            using JSON serialization. Use <see cref="M:Allure.Net.Commons.AllureApi.AddTestParameter(Allure.Net.Commons.Parameter)"/>
+            or add a suitable type formatter via
+            <see cref="M:Allure.Net.Commons.AllureLifecycle.AddTypeFormatter``1(Allure.Net.Commons.TypeFormatter{``0})"/> to
+            customize the serialization.
+            </param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.AddTestParameter(System.String,System.Object,Allure.Net.Commons.ParameterMode)">
+            <summary>
+            Adds a new parameter to the current test.
+            </summary>
+            <remarks>If no test is running, does nothing.</remarks>
+            <param name="name">The name of the new parameter.</param>
+            <param name="value">
+            The value of the new parameter. The value is converted to a string
+            using JSON serialization. Use <see cref="M:Allure.Net.Commons.AllureApi.AddTestParameter(Allure.Net.Commons.Parameter)"/>
+            or add a suitable type formatter via
+            <see cref="M:Allure.Net.Commons.AllureLifecycle.AddTypeFormatter``1(Allure.Net.Commons.TypeFormatter{``0})"/> to
+            customize the serialization.
+            </param>
+            <param name="mode">The display mode of the new parameter.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.AddTestParameter(System.String,System.Object,System.Boolean)">
+            <summary>
+            Adds a new parameter to the current test.
+            </summary>
+            <remarks>If no test is running, does nothing.</remarks>
+            <param name="name">The name of the new parameter.</param>
+            <param name="value">
+            The value of the new parameter. The value is converted to a string
+            using JSON serialization. Use <see cref="M:Allure.Net.Commons.AllureApi.AddTestParameter(Allure.Net.Commons.Parameter)"/>
+            or add a suitable type formatter via
+            <see cref="M:Allure.Net.Commons.AllureLifecycle.AddTypeFormatter``1(Allure.Net.Commons.TypeFormatter{``0})"/> to
+            customize the serialization.
+            </param>
+            <param name="excluded">
+            The exclusion flag of the new parameter. If set to true, the parameter
+            doesn't affect the test's history.
+            </param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.AddTestParameter(System.String,System.Object,Allure.Net.Commons.ParameterMode,System.Boolean)">
+            <summary>
+            Adds a new parameter to the current test.
+            </summary>
+            <remarks>If no test is running, does nothing.</remarks>
+            <param name="name">The name of the new parameter.</param>
+            <param name="value">
+            The value of the new parameter. The value is converted to a string
+            using JSON serialization. Use <see cref="M:Allure.Net.Commons.AllureApi.AddTestParameter(Allure.Net.Commons.Parameter)"/>
+            or add a suitable type formatter via
+            <see cref="M:Allure.Net.Commons.AllureLifecycle.AddTypeFormatter``1(Allure.Net.Commons.TypeFormatter{``0})"/> to
+            customize the serialization.
+            </param>
+            <param name="mode">The display mode of the new parameter.</param>
+            <param name="excluded">
+            The exclusion flag of the new parameter. If set to true, the parameter
+            doesn't affect the test's history.
+            </param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureApi.AddTestParameter(Allure.Net.Commons.Parameter)">
+            <summary>
+            Adds a new parameter to the current test. Use this overload if you
+            want to manually control how the parameter's value should be displayed
+            in the report.
+            </summary>
+            <remarks>If no test is running, does nothing.</remarks>
+            <param name="parameter">
+            A new parameter instance.
+            </param>
+        </member>
+        <member name="T:Allure.Net.Commons.AllureContext">
+            <summary>
+            Represents allure-related contextual information required to collect
+            the report data during a test execution. Comprises four contexts:
+            container, fxiture, test, and step, as well as methods to query and
+            modify them.
+            </summary>
+            <remarks>
+            Instances of this class are immutable to ensure proper isolation
+            between different tests and steps that may potentially be run
+            cuncurrently either by a test framework or by an end user.
+            </remarks>
+        </member>
+        <member name="P:Allure.Net.Commons.AllureContext.HasContainer">
+            <summary>
+            Returns true if a container context is active.
+            </summary>
+        </member>
+        <member name="P:Allure.Net.Commons.AllureContext.ContainerContextDepth">
+            <summary>
+            Returns the number of containers in the container context.
+            </summary>
+        </member>
+        <member name="P:Allure.Net.Commons.AllureContext.HasFixture">
+            <summary>
+            Returns true if a fixture context is active.
+            </summary>
+        </member>
+        <member name="P:Allure.Net.Commons.AllureContext.HasTest">
+            <summary>
+            Returns true if a test context is active.
+            </summary>
+        </member>
+        <member name="P:Allure.Net.Commons.AllureContext.HasStep">
+            <summary>
+            Returns true if a step context is active.
+            </summary>
+        </member>
+        <member name="P:Allure.Net.Commons.AllureContext.StepContextDepth">
+            <summary>
+            Returns the number of steps in the step context.
+            </summary>
+        </member>
+        <member name="P:Allure.Net.Commons.AllureContext.ContainerContext">
+            <summary>
+            A stack of fixture containers affecting subsequent tests.
+            </summary>
+            <remarks>
+            Activating this context allows operations on the current container
+            (including adding a fixture to or removing a fixture from the
+            current container).
+            </remarks>
+        </member>
+        <member name="P:Allure.Net.Commons.AllureContext.FixtureContext">
+            <summary>
+            A fixture that is being currently executed.
+            </summary>
+            <remarks>
+            Activating this context allows operations on the current fixture
+            result.<br/>
+            This property differs from <see cref="P:Allure.Net.Commons.AllureContext.CurrentFixture"/> in that
+            instead of throwing it returns null if a fixture context isn't
+            active.
+            </remarks>
+        </member>
+        <member name="P:Allure.Net.Commons.AllureContext.TestContext">
+            <summary>
+            A test that is being executed.
+            </summary>
+            <remarks>
+            Activating this context allows operations on the current test
+            result.<br/>
+            
+            This property differs from <see cref="P:Allure.Net.Commons.AllureContext.CurrentTest"/> in that
+            instead of throwing it returns null if a test context isn't active.
+            </remarks>
+        </member>
+        <member name="P:Allure.Net.Commons.AllureContext.StepContext">
+            <summary>
+            A stack of nested steps that are being executed.
+            </summary>
+            <remarks>
+            Activating this context allows operations on the current step.
+            </remarks>
+        </member>
+        <member name="P:Allure.Net.Commons.AllureContext.CurrentContainer">
+            <summary>
+            The most recently added container from the container context.
+            </summary>
+            <remarks>
+            It throws <see cref="T:System.InvalidOperationException"/> if a container
+            context isn't active.
+            </remarks>
+            <exception cref="T:System.InvalidOperationException"/>
+        </member>
+        <member name="P:Allure.Net.Commons.AllureContext.CurrentFixture">
+            <summary>
+            A fixture that is being executed.
+            </summary>
+            <remarks>
+            It throws <see cref="T:System.InvalidOperationException"/> if a fixture
+            context isn't active.
+            </remarks>
+            <exception cref="T:System.InvalidOperationException"/>
+        </member>
+        <member name="P:Allure.Net.Commons.AllureContext.CurrentTest">
+            <summary>
+            A test that is being executed.
+            </summary>
+            <remarks>
+            It throws <see cref="T:System.InvalidOperationException"/> if a test context
+            isn't active.
+            </remarks>
+            <exception cref="T:System.InvalidOperationException"/>
+        </member>
+        <member name="P:Allure.Net.Commons.AllureContext.CurrentStep">
+            <summary>
+            A step that is being executed.
+            </summary>
+            <remarks>
+            It throws <see cref="T:System.InvalidOperationException"/> if a step context
+            isn't active.
+            </remarks>
+            <exception cref="T:System.InvalidOperationException"/>
+        </member>
+        <member name="P:Allure.Net.Commons.AllureContext.CurrentStepContainer">
+            <summary>
+            A step container a next step should be put in.
+            </summary>
+            <remarks>
+            A step container can be a fixture, a test of an another step.<br/>
+            It throws <see cref="T:System.InvalidOperationException"/> if neither
+            fixture, nor test, nor step context is active.
+            </remarks>
+            <exception cref="T:System.InvalidOperationException"/>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureContext.PrintMembers(System.Text.StringBuilder)">
+            <summary>
+            Used by <see cref="M:Allure.Net.Commons.AllureContext.ToString"/> to serialize proeprties of the
+            context.
+            </summary>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureContext.WithContainer(Allure.Net.Commons.TestResultContainer)">
+            <summary>
+            Creates a new <see cref="T:Allure.Net.Commons.AllureContext"/> with the active container
+            context and the specified container pushed on top of it.
+            </summary>
+            <remarks>
+            Can't be called if a fixture or a test context is active.
+            </remarks>
+            <param name="container">
+            A container to push on top of the container context.
+            </param>
+            <returns>
+            A new instance of <see cref="T:Allure.Net.Commons.AllureContext"/> with the modified 
+            (always active) container context.
+            </returns>
+            <exception cref="T:System.ArgumentNullException"/>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureContext.WithNoLastContainer">
+            <summary>
+            Creates a new <see cref="T:Allure.Net.Commons.AllureContext"/> without the most recently
+            added container in its container context. Requires an active
+            container context. Deactivates a container context if it consists
+            of one container only before the call.
+            </summary>
+            <remarks>
+            Can't be called if a fixture or a test context is active.
+            </remarks>
+            <returns>
+            A new instance of <see cref="T:Allure.Net.Commons.AllureContext"/> with the modified
+            (possibly inactive) container context.
+            </returns>
+            <exception cref="T:System.InvalidOperationException"/>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureContext.WithFixtureContext(Allure.Net.Commons.FixtureResult)">
+            <summary>
+            Creates a new <see cref="T:Allure.Net.Commons.AllureContext"/> with the active fixture
+            context that is set to the specified fixture. Requires the
+            container context to be active.
+            </summary>
+            <remarks>
+            Only one fixture context can be active at a time.
+            </remarks>
+            <param name="fixtureResult">
+            A new fixture context.
+            </param>
+            <returns>
+            A new instance of <see cref="T:Allure.Net.Commons.AllureContext"/> with the modified
+            (always active) fixture context.
+            </returns>
+            <exception cref="T:System.ArgumentNullException"/>
+            <exception cref="T:System.InvalidOperationException"/>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureContext.WithNoFixtureContext">
+            <summary>
+            Creates a new <see cref="T:Allure.Net.Commons.AllureContext"/> with inactive fixture and
+            step contexts.
+            </summary>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureContext.WithTestContext(Allure.Net.Commons.TestResult)">
+            <summary>
+            Creates a new <see cref="T:Allure.Net.Commons.AllureContext"/> with the active test
+            context that is set to the specified test result.
+            Can't be used if a fixture context is active.
+            </summary>
+            <param name="testResult">
+            A new test context.
+            </param>
+            <returns>
+            A new instance of <see cref="T:Allure.Net.Commons.AllureContext"/> with the modified
+            (always active) test context.
+            </returns>
+            <exception cref="T:System.ArgumentNullException"/>
+            <exception cref="T:System.InvalidOperationException"/>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureContext.WithNoTestContext">
+            <summary>
+            Creates a new <see cref="T:Allure.Net.Commons.AllureContext"/> with inactive test,
+            fixture and step contexts.
+            </summary>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureContext.WithStep(Allure.Net.Commons.StepResult)">
+            <summary>
+            Creates a new <see cref="T:Allure.Net.Commons.AllureContext"/> with the active step
+            context and the specified step result pushed on top of it.
+            </summary>
+            <remarks>
+            Can't be called if neither fixture, nor test context is active.
+            </remarks>
+            <param name="stepResult">
+            A new step result to push on top of the step context.
+            </param>
+            <returns>
+            A new instance of <see cref="T:Allure.Net.Commons.AllureContext"/> with the modified
+            (always active) step context.
+            </returns>
+            <exception cref="T:System.ArgumentNullException"/>
+            <exception cref="T:System.InvalidOperationException"/>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureContext.WithNoLastStep">
+            <summary>
+            Creates a new <see cref="T:Allure.Net.Commons.AllureContext"/> without the most recently
+            added step in its step context. Requires an active step context.
+            Deactivates a step context if it consists of one step only before
+            the call.
+            </summary>
+            <returns>
+            A new instance of <see cref="T:Allure.Net.Commons.AllureContext"/> with the modified
+            (possibly inactive) step context.
+            </returns>
+            <exception cref="T:System.InvalidOperationException"/>
+        </member>
+        <member name="T:Allure.Net.Commons.AllureLifecycle">
+            <summary>
+            A facade that allows to control the Allure context, set up allure model
+            objects and emit output files.
+            </summary>
+            <remarks>
+            This class is primarily intended to be used by a test framework
+            integration. We don't advice to use it from test code unless strictly
+            necessary.<br></br>
+            NOTE: Modifications of the Allure context persist until either some
+            method has affect them, or the execution context is restored to the
+            point beyond the call that had introduced them.
+            </remarks>
+        </member>
+        <member name="P:Allure.Net.Commons.AllureLifecycle.TypeFormatters">
+            <summary>
+            The list of the currently registered formatters used by Allure to
+            convert test and step arguments to strings.
+            </summary>
+        </member>
+        <member name="F:Allure.Net.Commons.AllureLifecycle.modelMonitor">
+            <summary>
+            Protects mutations of shared allure model objects against data
+            races that may otherwise occur because of multithreaded access.
+            </summary>
+        </member>
+        <member name="P:Allure.Net.Commons.AllureLifecycle.Context">
+            <summary>
+            Captures the current value of Allure context.
+            </summary>
+        </member>
+        <member name="P:Allure.Net.Commons.AllureLifecycle.TestPlan">
+            <summary>
+            The current testplan. If no testplan was specified, the default one is
+            used that doesn't filter any test.
+            </summary>
+        </member>
+        <member name="P:Allure.Net.Commons.AllureLifecycle.JsonConfiguration">
+            <summary>
+            The JSON representation of the current Allure configuration.
+            </summary>
+        </member>
+        <member name="P:Allure.Net.Commons.AllureLifecycle.AllureConfiguration">
+            <summary>
+            The current Allure configuration.
+            </summary>
+        </member>
+        <member name="P:Allure.Net.Commons.AllureLifecycle.ResultsDirectory">
+            <summary>
+            The full path to the Allure results directory.
+            </summary>
+        </member>
+        <member name="P:Allure.Net.Commons.AllureLifecycle.Instance">
+            <summary>
+            The current instance of the Allure lifecycle.
+            </summary>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureLifecycle.AddTypeFormatter``1(Allure.Net.Commons.TypeFormatter{``0})">
+            <summary>
+            Registers a type formatter to be used when converting a test's or
+            step's argument to the string that will be included in the Allure
+            report.
+            </summary>
+            <typeparam name="T">
+            The type that the formatter converts. The formatter will be used for
+            arguments of that exact type. Otherwise, the argument will be converted
+            using JSON serialization.
+            </typeparam>
+            <param name="typeFormatter">The formatter instance.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureLifecycle.RunInContext(Allure.Net.Commons.AllureContext,System.Action)">
+            <summary>
+            Binds the provided value as the current Allure context and executes
+            the specified function. The context is then restored to the initial
+            value. That allows the Allure context to bypass .NET execution
+            context boundaries.
+            </summary>
+            <param name="context">
+            A context that was previously captured with <see cref="P:Allure.Net.Commons.AllureLifecycle.Context"/>.
+            If it is null, the code is executed in the current context.
+            </param>
+            <param name="action">A code to run.</param>
+            <returns>The context after the code is executed.</returns>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureLifecycle.RestoreContext(Allure.Net.Commons.AllureContext)">
+            <summary>
+            Binds the provided value as the current Allure context. This allows the
+            Allure context to bypass .NET execution context boundaries. Use this
+            function in a highly concurrent environments where framework hooks and
+            user's test functions might all be run in different execution contexts.
+            For other scenarios consider using <see cref="M:Allure.Net.Commons.AllureLifecycle.RunInContext(Allure.Net.Commons.AllureContext,System.Action)"/> first.
+            </summary>
+            <param name="context">
+            A context that was previously captured with <see cref="P:Allure.Net.Commons.AllureLifecycle.Context"/>.
+            It can't be null.
+            </param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureLifecycle.StartTestContainer(Allure.Net.Commons.TestResultContainer)">
+            <summary>
+            Starts a new test container and pushes it into the container
+            context making the container context active. The container becomes
+            the current one in the current execution context.
+            </summary>
+            <remarks>
+            This method modifies the Allure context.<br></br>
+            Can't be called if the fixture or the test context is active.
+            </remarks>
+            <param name="container">A new test container to start.</param>
+            <exception cref="T:System.InvalidOperationException"/>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureLifecycle.UpdateTestContainer(System.Action{Allure.Net.Commons.TestResultContainer})">
+            <summary>
+            Applies the specified update function to the current test container.
+            </summary>
+            <remarks>
+            Requires the container context to be active.
+            </remarks>
+            <exception cref="T:System.InvalidOperationException"/>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureLifecycle.StopTestContainer">
+            <summary>
+            Stops the current test container.
+            </summary>
+            <remarks>
+            Requires the container context to be active.
+            </remarks>
+            <exception cref="T:System.InvalidOperationException"/>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureLifecycle.WriteTestContainer">
+            <summary>
+            Writes the current test container and removes it from the context.
+            If there are another test containers in the context, the most
+            recently started one becomes the current container in the current
+            execution context. Otherwise the container context is deactivated.
+            </summary>
+            <remarks>
+            This method modifies the Allure context.<br></br>
+            Requires the container context to be active.
+            </remarks>
+            <exception cref="T:System.InvalidOperationException"/>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureLifecycle.StartBeforeFixture(Allure.Net.Commons.FixtureResult)">
+            <summary>
+            Starts a new before fixture and activates the fixture context with
+            it. The fixture is set as the current one in the current execution
+            context. Does nothing if the fixture context is already active.
+            </summary>
+            <remarks>
+            This method modifies the Allure context.<br></br>
+            Requires the container context to be active.
+            </remarks>
+            <param name="result">A new fixture.</param>
+            <exception cref="T:System.InvalidOperationException"/>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureLifecycle.StartAfterFixture(Allure.Net.Commons.FixtureResult)">
+            <summary>
+            Starts a new after fixture and activates the fixture context with
+            it. The fixture is set as the current one in the current execution
+            context. Does nothing if the fixture context is already active.
+            </summary>
+            <remarks>
+            This method modifies the Allure context.<br></br>
+            Requires the container context to be active.
+            </remarks>
+            <param name="result">A new fixture.</param>
+            <exception cref="T:System.InvalidOperationException"/>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureLifecycle.UpdateFixture(System.Action{Allure.Net.Commons.FixtureResult})">
+            <summary>
+            Applies the specified update function to the current fixture.
+            </summary>
+            <remarks>
+            Requires the fixture context to be active.
+            </remarks>
+            <exception cref="T:System.InvalidOperationException"/>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureLifecycle.StopFixture(System.Action{Allure.Net.Commons.FixtureResult})">
+            <summary>
+            Stops the current fixture and deactivates the fixture context.
+            </summary>
+            <param name="beforeStop">
+            A function applied to the fixture result before it is stopped.
+            </param>
+            <remarks>
+            This method modifies the Allure context.<br></br>
+            Required the fixture context to be active.
+            </remarks>
+            <exception cref="T:System.InvalidOperationException"/>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureLifecycle.StopFixture">
+            <summary>
+            Stops the current fixture and deactivates the fixture context.
+            </summary>
+            <remarks>
+            This method modifies the Allure context.<br></br>
+            Required the fixture context to be active.
+            </remarks>
+            <exception cref="T:System.InvalidOperationException"/>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureLifecycle.ScheduleTestCase(Allure.Net.Commons.TestResult)">
+            <summary>
+            Prepares a new test and activates the test context with it. The test
+            should be then started separately with <see cref="M:Allure.Net.Commons.AllureLifecycle.StartTestCase"/>
+            </summary>
+            <remarks>
+            This method modifies the Allure context.<br></br>
+            Requires the test context to be active.
+            </remarks>
+            <param name="testResult">A new test case.</param>
+            <exception cref="T:System.InvalidOperationException"/>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureLifecycle.StartTestCase">
+            <summary>
+            Starts a previously scheduled test.
+            </summary>
+            <remarks>
+            Requires the test context to be active.
+            </remarks>
+            <exception cref="T:System.InvalidOperationException"/>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureLifecycle.StartTestCase(Allure.Net.Commons.TestResult)">
+            <summary>
+            Starts a new test and activates the test context with it. The test
+            becomes the current one in the current execution context.
+            </summary>
+            <remarks>
+            This method modifies the Allure context.<br></br>
+            Requires the test context to be active.
+            </remarks>
+            <param name="testResult">A new test case.</param>
+            <exception cref="T:System.InvalidOperationException"/>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureLifecycle.UpdateTestCase(System.Action{Allure.Net.Commons.TestResult})">
+            <summary>
+            Applies the specified update function to the current test.
+            </summary>
+            <remarks>
+            Requires the test context to be active.
+            </remarks>
+            <exception cref="T:System.InvalidOperationException"/>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureLifecycle.StopTestCase(System.Action{Allure.Net.Commons.TestResult})">
+            <summary>
+            Stops the current test.
+            </summary>
+            <remarks>
+            Requires the test context to be active.
+            </remarks>
+            <param name="beforeStop">
+            A function applied to the test result before it is stopped.
+            </param>
+            <exception cref="T:System.InvalidOperationException"/>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureLifecycle.StopTestCase">
+            <summary>
+            Stops the current test.
+            </summary>
+            <remarks>
+            Requires the test context to be active.
+            </remarks>
+            <exception cref="T:System.InvalidOperationException"/>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureLifecycle.WriteTestCase">
+            <summary>
+            Writes the current test and removes it from the context. The test
+            context is then deactivated.
+            </summary>
+            <remarks>
+            This method modifies the Allure context.<br></br>
+            Requires the test context to be active.
+            </remarks>
+            <exception cref="T:System.InvalidOperationException"/>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureLifecycle.StartStep(Allure.Net.Commons.StepResult)">
+            <summary>
+            Starts a new step and pushes it into the step context making the
+            step context active. The step becomes the current one in the
+            current execution context.
+            </summary>
+            <remarks>
+            This method modifies the Allure context.<br></br>
+            Requires either the fixture or the test context to be active.
+            </remarks>
+            <param name="result">A new step.</param>
+            <exception cref="T:System.InvalidOperationException"/>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureLifecycle.UpdateStep(System.Action{Allure.Net.Commons.StepResult})">
+            <summary>
+            Applies the specified update function to the current step.
+            </summary>
+            <remarks>
+            Requires the step context to be active.
+            </remarks>
+            <exception cref="T:System.InvalidOperationException"/>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureLifecycle.StopStep(System.Action{Allure.Net.Commons.StepResult})">
+            <summary>
+            Stops the current step and removes it from the context. If there
+            are another steps in the context, the most recently started one
+            becomes the current step in the current execution context.
+            Otherwise the step context is deactivated.
+            </summary>
+            <remarks>
+            This method modifies the Allure context.<br></br>
+            Requires the step context to be active.
+            </remarks>
+            <param name="beforeStop">
+            A function that is applied to the step result before it is stopped.
+            </param>
+            <exception cref="T:System.InvalidOperationException"/>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureLifecycle.StopStep">
+            <summary>
+            Stops the current step and removes it from the context. If there
+            are another steps in the context, the most recently started one
+            becomes the current step in the current execution context.
+            Otherwise the step context is deactivated.
+            </summary>
+            <remarks>
+            This method modifies the Allure context.<br></br>
+            Requires the step context to be active.
+            </remarks>
+            <exception cref="T:System.InvalidOperationException"/>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureLifecycle.UpdateExecutableItem(System.Action{Allure.Net.Commons.ExecutableItem})">
+            <summary>
+            If the step context is active, updates the current step.
+            Otherwise, if the fixture context is active, updates the current fixture.
+            Otherwise, updates the current test.
+            Fails if neither test, nor fixture, nor step context is active.
+            </summary>
+            <remarks>
+            The method is intended to be used by authors of integrations.
+            </remarks>
+            <param name="updateItem">The update callback.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.AllureLifecycle.CleanupResultDirectory">
+            <summary>
+            Removes all files and folders in the current Allure results directory.
+            </summary>
+        </member>
+        <member name="T:Allure.Net.Commons.ExtendedApi">
+            <summary>
+            A facade that provides some advanced and/or low-level Runtime API to
+            enhance the report. You rarely need to use it directly. Please, always
+            prefer <see cref="T:Allure.Net.Commons.AllureApi"/> when possible.
+            </summary>
+        </member>
+        <member name="M:Allure.Net.Commons.ExtendedApi.StartBeforeFixture(System.String)">
+            <summary>
+            Starts a new setup fixture. Removes all unfinished steps.
+            </summary>
+            <remarks>
+            If Allure is not running, does nothing.
+            </remarks>
+            <param name="name">The name of the setup fixture.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.ExtendedApi.StartAfterFixture(System.String)">
+            <summary>
+            Starts a new teardown fixture. Removes all unfinished steps.
+            </summary>
+            <remarks>
+            If Allure is not running, does nothing.
+            </remarks>
+            <param name="name">The name of the teardown fixture.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.ExtendedApi.PassFixture">
+            <summary>
+            Makes the current fixture passed and stops it. Removes all unfinished steps.
+            </summary>
+            <remarks>
+            If no fixture is running, does nothing.
+            </remarks>
+        </member>
+        <member name="M:Allure.Net.Commons.ExtendedApi.PassFixture(System.Action{Allure.Net.Commons.FixtureResult})">
+            <summary>
+            Makes the current fixture passed and stops it. Removes all unfinished steps.
+            </summary>
+            <remarks>
+            If no fixture is running, does nothing.
+            </remarks>
+            <param name="updateResults">
+            The callback that is called before the fixture is stopped.
+            </param>
+        </member>
+        <member name="M:Allure.Net.Commons.ExtendedApi.FailFixture">
+            <summary>
+            Makes the current fixture failed and stops it. Removes all unfinished steps.
+            </summary>
+            <remarks>
+            If no fixture is running, does nothing.
+            </remarks>
+        </member>
+        <member name="M:Allure.Net.Commons.ExtendedApi.FailFixture(System.Action{Allure.Net.Commons.FixtureResult})">
+            <summary>
+            Makes the current fixture failed and stops it. Removes all unfinished steps.
+            </summary>
+            <remarks>
+            If no fixture is running, does nothing.
+            </remarks>
+            <param name="updateResults">
+            The callback that is called before the fixture is stopped.
+            </param>
+        </member>
+        <member name="M:Allure.Net.Commons.ExtendedApi.FailFixture(System.Exception)">
+            <summary>
+            Makes the current fixture failed and stops it. Removes all unfinished steps.
+            </summary>
+            <remarks>
+            If no fixture is running, does nothing.
+            </remarks>
+            <param name="error">The error to report at the fixture level.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.ExtendedApi.FailFixture(System.Action{Allure.Net.Commons.FixtureResult},System.Exception)">
+            <summary>
+            Makes the current fixture failed and stops it. Removes all unfinished steps.
+            </summary>
+            <remarks>
+            If no fixture is running, does nothing.
+            </remarks>
+            <param name="updateResults">
+            The callback that is called before the fixture is stopped.
+            </param>
+            <param name="error">The error to report at the fixture level.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.ExtendedApi.BreakFixture">
+            <summary>
+            Makes the current fixture broken and stops it. Removes all unfinished steps.
+            </summary>
+            <remarks>
+            If no fixture is running, does nothing.
+            </remarks>
+        </member>
+        <member name="M:Allure.Net.Commons.ExtendedApi.BreakFixture(System.Action{Allure.Net.Commons.FixtureResult})">
+            <summary>
+            Makes the current fixture broken and stops it. Removes all unfinished steps.
+            the fixture contexts.
+            </summary>
+            <remarks>
+            If no fixture is running, does nothing.
+            </remarks>
+            <param name="updateResults">
+            The callback that is called before the fixture is stopped.
+            </param>
+        </member>
+        <member name="M:Allure.Net.Commons.ExtendedApi.BreakFixture(System.Exception)">
+            <summary>
+            Makes the current fixture broken and stops it. Removes all unfinished steps.
+            the fixture contexts.
+            </summary>
+            <remarks>
+            If no fixture is running, does nothing.
+            </remarks>
+            <param name="error">The error to report at the fixture level.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.ExtendedApi.BreakFixture(System.Action{Allure.Net.Commons.FixtureResult},System.Exception)">
+            <summary>
+            Makes the current fixture broken and stops it. Removes all unfinished steps.
+            the fixture contexts.
+            </summary>
+            <remarks>
+            If no fixture is running, does nothing.
+            </remarks>
+            <param name="updateResults">
+            The callback that is called before the fixture is stopped.
+            </param>
+            <param name="error">The error to report at the fixture level.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.ExtendedApi.SkipFixture">
+            <summary>
+            Makes the current fixture skipped and stops it. Removes all unfinished steps.
+            the fixture contexts.
+            </summary>
+            <remarks>
+            If no fixture is running, does nothing.
+            </remarks>
+        </member>
+        <member name="M:Allure.Net.Commons.ExtendedApi.SkipFixture(System.Action{Allure.Net.Commons.FixtureResult})">
+            <summary>
+            Makes the current fixture skipped and stops it. Removes all unfinished steps.
+            the fixture contexts.
+            </summary>
+            <remarks>
+            If no fixture is running, does nothing.
+            </remarks>
+            <param name="updateResults">
+            The callback that is called before the fixture is stopped.
+            </param>
+        </member>
+        <member name="M:Allure.Net.Commons.ExtendedApi.ResolveFixture(System.Exception)">
+            <summary>
+            Resolves the status of the current fixture to passed, failed, or broken
+            depending on the exception and stops it. Removes all unfinished steps.
+            </summary>
+            <remarks>
+            If no fixture is running, does nothing.
+            </remarks>
+            <param name="error">
+            An exception instance. If it's <c>null</c>, the fixture becomes passed.
+            Otherwise, the fixture becomes failed or broken depending on the
+            exception's type and the current configuration.
+            </param>
+        </member>
+        <member name="M:Allure.Net.Commons.ExtendedApi.StartStep(System.String)">
+            <summary>
+            Starts a new step.
+            </summary>
+            <remarks>If no test or fixture is running, does nothing.</remarks>
+            <param name="name">The name of the step.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.ExtendedApi.StartStep(System.String,System.Action{Allure.Net.Commons.StepResult})">
+            <summary>
+            Starts a new step.
+            </summary>
+            <remarks>If no test or fixture is running, does nothing.</remarks>
+            <param name="name">The name of the step.</param>
+            <param name="updateResults">
+            The callback that is executed right after the step is started.
+            </param>
+        </member>
+        <member name="M:Allure.Net.Commons.ExtendedApi.PassStep">
+            <summary>
+            Makes the current step passed and stops it.
+            </summary>
+            <remarks>If no step is running, does nothing.</remarks>
+        </member>
+        <member name="M:Allure.Net.Commons.ExtendedApi.PassStep(System.Action{Allure.Net.Commons.StepResult})">
+            <summary>
+            Makes the current step passed and stops it.
+            </summary>
+            <remarks>If no step is running, does nothing.</remarks>
+            <param name="updateResults">
+            The callback that is executed before the step is stopped.
+            </param>
+        </member>
+        <member name="M:Allure.Net.Commons.ExtendedApi.FailStep">
+            <summary>
+            Makes the current step failed and stops it.
+            </summary>
+            <remarks>If no step is running, does nothing.</remarks>
+        </member>
+        <member name="M:Allure.Net.Commons.ExtendedApi.FailStep(System.Action{Allure.Net.Commons.StepResult})">
+            <summary>
+            Makes the current step failed and stops it.
+            </summary>
+            <remarks>If no step is running, does nothing.</remarks>
+            <param name="updateResults">
+            The callback that is executed before the step is stopped.
+            </param>
+        </member>
+        <member name="M:Allure.Net.Commons.ExtendedApi.FailStep(System.Exception)">
+            <summary>
+            Makes the current step failed and stops it.
+            </summary>
+            <remarks>If no step is running, does nothing.</remarks>
+            <param name="error">The error to report at the step level.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.ExtendedApi.FailStep(System.Action{Allure.Net.Commons.StepResult},System.Exception)">
+            <summary>
+            Makes the current step failed and stops it.
+            </summary>
+            <remarks>If no step is running, does nothing.</remarks>
+            <param name="updateResults">
+            The callback that is executed before the step is stopped.
+            </param>
+            <param name="error">The error to report at the step level.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.ExtendedApi.BreakStep">
+            <summary>
+            Makes the current step broken and stops it.
+            </summary>
+            <remarks>If no step is running, does nothing.</remarks>
+        </member>
+        <member name="M:Allure.Net.Commons.ExtendedApi.BreakStep(System.Action{Allure.Net.Commons.StepResult})">
+            <summary>
+            Makes the current step broken and stops it.
+            </summary>
+            <remarks>If no step is running, does nothing.</remarks>
+            <param name="updateResults">
+            The callback that is executed before the step is stopped.
+            </param>
+        </member>
+        <member name="M:Allure.Net.Commons.ExtendedApi.BreakStep(System.Exception)">
+            <summary>
+            Makes the current step broken and stops it.
+            </summary>
+            <remarks>If no step is running, does nothing.</remarks>
+            <param name="error">The error to report at the step level.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.ExtendedApi.BreakStep(System.Action{Allure.Net.Commons.StepResult},System.Exception)">
+            <summary>
+            Makes the current step broken and stops it.
+            </summary>
+            <remarks>If no step is running, does nothing.</remarks>
+            <param name="updateResults">
+            The callback that is executed before the step is stopped.
+            </param>
+            <param name="error">The error to report at the step level.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.ExtendedApi.SkipStep">
+            <summary>
+            Makes the current step skipped and stops it.
+            </summary>
+            <remarks>If no step is running, does nothing.</remarks>
+        </member>
+        <member name="M:Allure.Net.Commons.ExtendedApi.SkipStep(System.Action{Allure.Net.Commons.StepResult})">
+            <summary>
+            Makes the current step skipped and stops it.
+            </summary>
+            <remarks>If no step is running, does nothing.</remarks>
+            <param name="updateResults">
+            The callback that is executed before the step is stopped.
+            </param>
+        </member>
+        <member name="M:Allure.Net.Commons.ExtendedApi.ResolveStep(System.Exception)">
+            <summary>
+            Resolves the status of the current step to passed, failed, or broken
+            depending on the exception and stops it.
+            </summary>
+            <remarks>
+            If no step is running, does nothing.
+            </remarks>
+            <param name="error">
+            An exception instance. If it's <c>null</c>, the step becomes passed.
+            Otherwise, the step becomes failed or broken depending on the
+            exception's type and the current configuration.
+            </param>
+        </member>
+        <member name="M:Allure.Net.Commons.ExtendedApi.Before(System.String,System.Action)">
+            <summary>
+            Executes the action and reports the result as a new setup fixture.
+            </summary>
+            <remarks>If Allure is not running, just calls the action.</remarks>
+            <param name="name">The name of the setup fixture.</param>
+            <param name="action">The code to run.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.ExtendedApi.Before``1(System.String,System.Func{``0})">
+            <summary>
+            Executes the function and reports the result as a new setup fixture.
+            </summary>
+            <remarks>If Allure is not running, just calls the function.</remarks>
+            <param name="name">The name of the setup fixture.</param>
+            <param name="function">The function to run.</param>
+            <returns>The original value returned by the function.</returns>
+        </member>
+        <member name="M:Allure.Net.Commons.ExtendedApi.Before(System.String,System.Func{System.Threading.Tasks.Task})">
+            <summary>
+            Executes the asynchronous action and reports the result as a new setup
+            fixture.
+            </summary>
+            <remarks>If Allure is not running, just calls the action.</remarks>
+            <param name="name">The name of the setup fixture.</param>
+            <param name="action">The asynchronous code to run.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.ExtendedApi.Before``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})">
+            <summary>
+            Executes the asynchronous function and reports the result as a new
+            setup fixture.
+            </summary>
+            <remarks>If Allure is not running, just calls the function.</remarks>
+            <param name="name">The name of the setup fixture.</param>
+            <param name="function">The asynchronous function to run.</param>
+            <returns>The original value returned by the function.</returns>
+        </member>
+        <member name="M:Allure.Net.Commons.ExtendedApi.After(System.String,System.Action)">
+            <summary>
+            Executes the action and reports the result as a new teardown fixture.
+            </summary>
+            <remarks>If Allure is not running, just calls the action.</remarks>
+            <param name="name">The name of the teardown fixture.</param>
+            <param name="action">The code to run.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.ExtendedApi.After``1(System.String,System.Func{``0})">
+            <summary>
+            Executes the function and reports the result as a new teardown fixture.
+            </summary>
+            <remarks>If Allure is not running, just calls the function.</remarks>
+            <param name="name">The name of the teardown fixture.</param>
+            <param name="function">The function to run.</param>
+            <returns>The original value returned by the function.</returns>
+        </member>
+        <member name="M:Allure.Net.Commons.ExtendedApi.After(System.String,System.Func{System.Threading.Tasks.Task})">
+            <summary>
+            Executes the asynchronous action and reports the result as a new
+            teardown fixture.
+            </summary>
+            <remarks>If Allure is not running, just calls the action.</remarks>
+            <param name="name">The name of the teardown fixture.</param>
+            <param name="action">The asynchronous code to run.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.ExtendedApi.After``1(System.String,System.Func{System.Threading.Tasks.Task{``0}})">
+            <summary>
+            Executes the asynchronous function and reports the result as a new
+            teardown fixture.
+            </summary>
+            <remarks>If Allure is not running, just calls the function.</remarks>
+            <param name="name">The name of the teardown fixture.</param>
+            <param name="function">The asynchronous function to run.</param>
+            <returns>The original value returned by the function.</returns>
+        </member>
+        <member name="T:Allure.Net.Commons.Functions.FormatFunctions">
+            <summary>
+                A set of functions to help with value-to-string conversion of test and
+                step arguments.
+            </summary>
+        </member>
+        <member name="M:Allure.Net.Commons.Functions.FormatFunctions.Format(System.Object)">
+            <summary>
+                Formats a given value into a string. This is a shorthand for
+                <see cref="M:Allure.Net.Commons.Functions.FormatFunctions.Format(System.Object,System.Collections.Generic.IReadOnlyDictionary{System.Type,Allure.Net.Commons.ITypeFormatter})" />
+                with empty formatters dictionary.
+            </summary>
+        </member>
+        <member name="M:Allure.Net.Commons.Functions.FormatFunctions.Format(System.Object,System.Collections.Generic.IReadOnlyDictionary{System.Type,Allure.Net.Commons.ITypeFormatter})">
+            <summary>
+                Formats a given value into a string. If the type of the value matches
+                a formater in the formatters dictionary, the formatter is used to
+                produce the result.
+                Otherwise, the value is formatted as a JSON string or object.ToString()
+                if JSON serialization failed.
+                The serializer skips fields that contain loop references
+                and fields that could not be serialized
+            </summary>
+        </member>
+        <member name="T:Allure.Net.Commons.Functions.IdFunctions">
+            <summary>
+            Functions to create UUIDs, full names, etc.
+            </summary>
+        </member>
+        <member name="M:Allure.Net.Commons.Functions.IdFunctions.CreateUUID">
+            <summary>
+            Generates a UUID for a test or container.
+            </summary>
+        </member>
+        <member name="M:Allure.Net.Commons.Functions.IdFunctions.CreateTitlePath(System.Type)">
+            <summary>
+            Creates a titlePath: a path to a test class in a tree of test results.
+            </summary>
+            <param name="type">A type representing a test class</param>
+            <remarks>
+            A titlePath consists of:
+            <list type="bullet">
+            <item>assembly name</item>
+            <item>elements of namespace</item>
+            <item>name of type (including its declaring types, if any)</item>
+            <item>type parameters (for generic type definitions)</item>
+            <item>type arguments (for constructed generic types)</item>
+            </list>
+            </remarks>
+        </member>
+        <member name="M:Allure.Net.Commons.Functions.IdFunctions.GetTypeId(System.Type)">
+            <summary>
+            Creates a name that uniquely identifies a given type.
+            </summary>
+            <remarks>
+            A fully-qualified name of a type includes:
+            <list type="bullet">
+            <item>assembly name</item>
+            <item>namespace (if any)</item>
+            <item>name of type (including its declaring types, if any)</item>
+            <item>type parameters (for generic type definitions)</item>
+            <item>type arguments (for constructed generic types)</item>
+            </list>
+            Unlike <see cref="P:System.Type.FullName"/>, it doesn't include assembly
+            versions and other metadata that can be subject to change.
+            Unlike <see cref="M:System.Type.ToString"/>, it includes assembly names to
+            the name of the type and its type arguments, which prevents collisions
+            in some scenarios.
+            <br/>
+            For a generic parameters (like <c>T</c> in <c>class Foo&lt;T> { }</c>), returns just its name.
+            </remarks>
+        </member>
+        <member name="M:Allure.Net.Commons.Functions.IdFunctions.GetMethodId(System.Reflection.MethodInfo)">
+            <summary>
+            Creates a name that uniquely identifies a given method in its declaring type.
+            </summary>
+            <param name="method">
+            A method.
+            If it's a constructed generic method, its generic definition is used instead.
+            </param>
+            <remarks>
+            For a given test method, its id includes:
+            <list type="bullet">
+            <item>name</item>
+            <item>type parameters (like <c>T</c> in <c>void Foo&lt;T>() { }</c>)</item>
+            <item>parameter types (like <c>System.String</c> in <c>void Foo(string bar) { }</c>)</item>
+            </list>
+            </remarks>
+        </member>
+        <member name="M:Allure.Net.Commons.Functions.IdFunctions.CreateFullName(System.Reflection.MethodInfo)">
+            <summary>
+            Creates a string that unuquely identifies a given method.
+            </summary>
+            <param name="method">
+            A method.
+            If it's a constructed generic method, its generic definition is used instead.
+            </param>
+            <remarks>
+            For a given test method the full name includes:
+            <list type="bullet">
+            <item>assembly name</item>
+            <item>namespace (if any)</item>
+            <item>name of type (including its declaring types, if any)</item>
+            <item>type parameters of the declaring type (for generic type definitions)</item>
+            <item>type arguments of the declaring type (for constructed generic types)</item>
+            <item>the method's name</item>
+            <item>type parameters of the method (if any)</item>
+            <item>parameter types</item>
+            </list>
+            </remarks>
+        </member>
+        <member name="M:Allure.Net.Commons.Functions.IdFunctions.CreateTestCaseId(System.String)">
+            <summary>
+            Creates a testCaseId value. testCaseId has a fixed length and depends
+            only on a given fullName. The fullName shouldn't depend on test parameters.
+            </summary>
+        </member>
+        <member name="M:Allure.Net.Commons.Functions.IdFunctions.CreateHistoryId(System.String,System.Collections.Generic.IEnumerable{Allure.Net.Commons.Parameter})">
+            <summary>
+            Creates a historyId value to be used by Allure Reporter. historyId has a
+            fixed length and depends on a fullName and parameters of a test.
+            Howewer, it doesn't depend on parametrs order as well as on parameter
+            names in general. Parameters are sorted alphabetically by their names.
+            Then, only the values are used to produce the final historyId value.
+            </summary>
+            <param name="fullName">The fullName of a test.</param>
+            <param name="parameters">The parameters of a test.</param>
+        </member>
+        <member name="T:Allure.Net.Commons.Functions.ModelFunctions">
+            <summary>
+            Contains functions to help implementing Allure model-related conversions.
+            </summary>
+        </member>
+        <member name="M:Allure.Net.Commons.Functions.ModelFunctions.IsKnownError(System.Collections.Generic.IEnumerable{System.String},System.Exception)">
+            <summary>
+            Checks if an exception type, one of its base types, or one of the
+            interfaces it implements exists in the list of known execption types.
+            </summary>
+            <param name="knownErrorBases">The list of known exception types.</param>
+            <param name="e">The exception to check.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.Functions.ModelFunctions.ResolveErrorStatus(System.Collections.Generic.IEnumerable{System.String},System.Exception)">
+            <summary>
+            Returns a <see cref="F:Allure.Net.Commons.Status.failed"/> if a given exception represents
+            an assertion error. Otherwise, returns <see cref="F:Allure.Net.Commons.Status.broken"/>.
+            </summary>
+            <param name="failExceptions">
+              The list of exception types. Exceptions of those types (including
+              subclasses) are considered assertion errors. This list typically comes
+              from the configuration associated with the current lifecycle instance.
+            </param>
+            <param name="e">The exception to convert.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Allure.Net.Commons.Functions.ModelFunctions.ToStatusDetails(System.Exception)">
+            <summary>
+            Converts an exception to the status details.
+            </summary>
+            <param name="e">The exception to convert.</param>
+        </member>
+        <member name="M:Allure.Net.Commons.Functions.ModelFunctions.EnsureSuites(Allure.Net.Commons.TestResult,System.String,System.String,System.String)">
+            <summary>
+            Checks if the test result contains a suite-hierarchy label, i.e., one
+            of the <c>parentSuite</c>, <c>suite</c>, or <c>subSuite</c> labels. If
+            not, adds the provided default values to the list of labels. Otherwise,
+            leaves the test result as is.
+            </summary>
+            <param name="testResult">A test result to modify</param>
+            <param name="parentSuite">
+            A value for the <c>parentSuite</c> label. If null or empty, the label
+            won't be added
+            </param>
+            <param name="suite">
+            A value for the <c>suite</c> label. If null or empty, the label won't
+            be added
+            </param>
+            <param name="subSuite">
+            A value for the <c>subSuite</c> label. If null or empty, the label won't
+            be added
+            </param>
+        </member>
+        <member name="M:Allure.Net.Commons.Functions.ModelFunctions.EnumerateEnvironmentLabels">
+            <summary>
+            Returns a sequence of labels defined by the environment variables in form
+            of <c>ALLURE_LABEL_&lt;name>=&lt;value></c>
+            </summary>
+        </member>
+        <member name="M:Allure.Net.Commons.Functions.ModelFunctions.EnumerateGlobalLabels">
+            <summary>
+            Returns a sequence of labels defined by the <c>globalLabels</c>
+            configuration property.
+            </summary>
+        </member>
+        <member name="F:Allure.Net.Commons.Status.failed">
+            <remarks/>
+        </member>
+        <member name="F:Allure.Net.Commons.Status.broken">
+            <remarks/>
+        </member>
+        <member name="F:Allure.Net.Commons.Status.passed">
+            <remarks/>
+        </member>
+        <member name="F:Allure.Net.Commons.Status.skipped">
+            <remarks/>
+        </member>
+        <member name="F:Allure.Net.Commons.Stage.scheduled">
+            <remarks/>
+        </member>
+        <member name="F:Allure.Net.Commons.Stage.running">
+            <remarks/>
+        </member>
+        <member name="F:Allure.Net.Commons.Stage.finished">
+            <remarks/>
+        </member>
+        <member name="F:Allure.Net.Commons.Stage.pending">
+            <remarks/>
+        </member>
+        <member name="F:Allure.Net.Commons.Stage.interrupted">
+            <remarks/>
+        </member>
+        <member name="T:Allure.Net.Commons.SeverityLevel">
+            <summary>
+            The test severity levels.
+            </summary>
+        </member>
+        <member name="T:Allure.Net.Commons.LabelName">
+            <summary>
+            The names of the well-known labels.
+            </summary>
+        </member>
+        <member name="T:Allure.Net.Commons.LinkType">
+            <summary>
+            The names of the well-known link types.
+            </summary>
+        </member>
+        <member name="T:Allure.Net.Commons.ParameterMode">
+            <summary>
+            The parameter display modes.
+            </summary>
+        </member>
+        <member name="F:Allure.Net.Commons.ParameterMode.Default">
+            <summary>
+            The parameter's value is revealed.
+            </summary>
+        </member>
+        <member name="F:Allure.Net.Commons.ParameterMode.Masked">
+            <summary>
+            The parameter's value is masked with placeholder characters.
+            </summary>
+        </member>
+        <member name="F:Allure.Net.Commons.ParameterMode.Hidden">
+            <summary>
+            The parameter isn't shown in the report at all (but is still used
+            to correlate the history of the test's runs).
+            </summary>
+        </member>
+        <member name="M:Allure.Net.Commons.Steps.AllureStepParameterHelper.TryGetValue(System.Collections.Generic.IReadOnlyDictionary{System.Type,Allure.Net.Commons.ITypeFormatter},System.Object,System.String,System.String@)">
+            <summary> Getting the value of field or property </summary>
+        </member>
+        <member name="T:Allure.Net.Commons.TestPlan.AllureTestPlan">
+            <summary>
+            A set of functions to implement test plan support.
+            </summary>
+        </member>
+        <member name="P:Allure.Net.Commons.TestPlan.AllureTestPlan.Tests">
+            <summary>
+            The test plan entries that denote tests included in the run.
+            </summary>
+        </member>
+        <member name="M:Allure.Net.Commons.TestPlan.AllureTestPlan.IsSelected(System.String,System.String)">
+            <summary>
+            Used by integrations to check if a test is selected by the test plan.
+            </summary>
+            <param name="fullName">A fullName of the test.</param>
+            <param name="allureId">
+            An identifier of the test case (if any).
+            Use <see cref="M:Allure.Net.Commons.TestPlan.AllureTestPlan.GetAllureId(System.Collections.Generic.IEnumerable{Allure.Net.Commons.Label})"/> to get it from the test result.
+            </param>
+            <returns>true if the test should be executed. false otherwise.</returns>
+        </member>
+        <member name="M:Allure.Net.Commons.TestPlan.AllureTestPlan.IsSelected(Allure.Net.Commons.TestResult)">
+            <summary>
+            A shorthand for <see cref="M:Allure.Net.Commons.TestPlan.AllureTestPlan.IsSelected(System.String,System.String)"/> with the
+            fullName and the allure id taken from the provided test result.
+            </summary>
+        </member>
+        <member name="M:Allure.Net.Commons.TestPlan.AllureTestPlan.FromJson(System.String)">
+            <summary>
+            Creates the test plan from a JSON string.
+            </summary>
+        </member>
+        <member name="M:Allure.Net.Commons.TestPlan.AllureTestPlan.FromEnvironment">
+            <summary>
+            Loads the test plan from the file pointed by the environment variable.
+            </summary>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:Allure.Net.Commons.TestPlan.AllureTestPlan.GetAllureId(System.Collections.Generic.IEnumerable{Allure.Net.Commons.Label})">
+            <summary>
+            Finds an Allure id in a sequence of labels. If no id exists, returns
+            null.
+            </summary>
+        </member>
+        <member name="F:Allure.Net.Commons.TestPlan.AllureTestPlan.DEFAULT_TESTPLAN">
+            <summary>
+            A test plan that doesn't filter any test.
+            </summary>
+        </member>
+        <member name="M:Allure.Net.Commons.TestPlan.AllureTestPlan.ResolveTestPlanPath">
+            <summary>
+            Returns the path of the current test plan file, if any.
+            </summary>
+        </member>
+        <member name="P:Allure.Net.Commons.TestPlan.AllureTestPlan.SkipReason">
+            <summary>
+            A short message that can be used to report an ignored test to the test
+            framework.
+            </summary>
+        </member>
+        <member name="T:System.Runtime.CompilerServices.IsExternalInit">
+            <summary>
+            This class serves as an init-only setter modreq to make a library that
+            uses init only setters compile against pre-net5.0 TFMs (including .NET
+            Standard). See
+            <see href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-9.0/init#metadata-encoding">
+              this article
+            </see>
+            and
+            <see href="https://developercommunity.visualstudio.com/t/error-cs0518-predefined-type-systemruntimecompiler/1244809#TPIN-N1249582">
+              this answer
+            </see>
+            for more details.
+            </summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute">
+            <summary>
+            This attribute hints the compiler that the parameter it's applied to
+            is not null if the method returns a specified value.
+            It's not included in netstandard2.0 but can be define it the project's code.
+            </summary>
+            <param name="returnValue">
+            A return value that indicated the argument is not null
+            </param>
+        </member>
+        <member name="M:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.#ctor(System.Boolean)">
+            <summary>
+            This attribute hints the compiler that the parameter it's applied to
+            is not null if the method returns a specified value.
+            It's not included in netstandard2.0 but can be define it the project's code.
+            </summary>
+            <param name="returnValue">
+            A return value that indicated the argument is not null
+            </param>
+        </member>
+    </members>
+</doc>
